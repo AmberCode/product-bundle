@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<p>Questions:</p>
+
+<table>
+    <thead>
+       <tr>
+           <th>Question</th>
+           <th>Answers</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Age:
+            </td>
+            <td>
+                <input id="ageInput" list="AgeDataList">
+
+                <datalist id="AgeDataList">
+                    <option value="0-17">
+                    <option value="18-64">
+                    <option value="65+">
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Student
+            </td>
+            <td>
+                <input id="studentCheckbox" type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Income
+            </td>
+            <td>
+                <input id="incomeInput" list="IncomeDataList">
+
+                <datalist id="IncomeDataList">
+                    <option value="0">
+                    <option value="1-12000">
+                    <option value="12001-40000">
+                    <option value="40001+">
+                </datalist>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p></p>
+
+<div>
+    <button id="SearchButton" type="button">Search</button>
+</div>
+
+<p></p>
+
+<div id="bundleDiv">
+    <p>Recommended bundle: <label id="bundleLabel"></label> </p>
+    
+    <table id="bundleTable">
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <p></p>
+
+    <div id="addProductDiv">
+        
+        <select id="productSelect">
+        </select>
+
+        <button id="addNewProductButton" type="button">Add</button>
+    </div>
+</div>
+
+
+@section Main
+{
+    <script type="text/javascript" src="~/Scripts/utils.js"></script>
+    <script type="text/javascript" src="~/Scripts/service.js"></script>
+    <script type="text/javascript" src="~/Scripts/controller.js"></script>
+
+    <script type="text/javascript">
+
+        window.onload = () => {
+
+            main.init();
+
+        };
+
+    </script>
+}
+

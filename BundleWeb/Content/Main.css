@@ -1,0 +1,16 @@
+﻿table {
+    width: 800px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+
+#bundleLabel {
+    color: forestgreen;
+    font-weight: bold;
+}

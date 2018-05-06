@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="@Url.Content("~/Content/Main.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h2>Bundle Tool</h2>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+
+@RenderSection("Main")
+
+</html>
