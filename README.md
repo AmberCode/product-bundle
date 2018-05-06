@@ -7,3 +7,4 @@
 # How to run app:
 * Restore Nuget packages or just build
 * And run BundleWeb project
+* Chrome browser or other modern ones are recommended.
